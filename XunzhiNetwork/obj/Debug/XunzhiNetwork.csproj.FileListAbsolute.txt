@@ -1,0 +1,6 @@
+C:\Users\Pxjw\Documents\GitHub\XunzhiNetwork\XunzhiNetwork\bin\XunzhiNetwork.dll.config
+C:\Users\Pxjw\Documents\GitHub\XunzhiNetwork\XunzhiNetwork\bin\XunzhiNetwork.dll
+C:\Users\Pxjw\Documents\GitHub\XunzhiNetwork\XunzhiNetwork\bin\XunzhiNetwork.pdb
+C:\Users\Pxjw\Documents\GitHub\XunzhiNetwork\XunzhiNetwork\obj\Debug\XunzhiNetwork.csprojResolveAssemblyReference.cache
+C:\Users\Pxjw\Documents\GitHub\XunzhiNetwork\XunzhiNetwork\obj\Debug\XunzhiNetwork.dll
+C:\Users\Pxjw\Documents\GitHub\XunzhiNetwork\XunzhiNetwork\obj\Debug\XunzhiNetwork.pdb
