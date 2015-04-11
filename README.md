@@ -11,7 +11,7 @@
 * Architecture：Junwei Peng
 
 ##### 使用开源 Amaze UI  
-* The MIT License (MIT) 
+* [The MIT License (MIT)](https://github.com/allmobilize/amazeui/blob/master/LICENSE.md) 
 * Copyright (c) 2014-2015 AllMobilize Inc.
 
 
