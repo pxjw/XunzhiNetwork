@@ -10,6 +10,10 @@
 * Xunzhi Network
 * Architecture：Junwei Peng
 
+##### 使用开源 Amaze UI  
+* The MIT License (MIT) 
+** Copyright (c) 2014-2015 AllMobilize Inc.
+
 
 
 

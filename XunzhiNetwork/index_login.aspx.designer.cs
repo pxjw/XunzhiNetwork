@@ -10,6 +10,6 @@
 namespace XunzhiNetwork {
     
     
-    public partial class login {
+    public partial class index_login {
     }
 }

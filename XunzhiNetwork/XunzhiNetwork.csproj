@@ -57,25 +57,40 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="css\amazeui.min.css" />
+    <Content Include="assets\css\admin.css" />
+    <Content Include="assets\css\amazeui.css" />
+    <Content Include="assets\css\amazeui.flat.css" />
+    <Content Include="assets\css\amazeui.flat.min.css" />
+    <Content Include="assets\css\amazeui.min.css" />
+    <Content Include="assets\css\app.css" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\i\app-icon72x72%402x.png" />
+    <Content Include="assets\i\examples\admin-chrome.png" />
+    <Content Include="assets\i\examples\admin-firefox.png" />
+    <Content Include="assets\i\examples\admin-ie.png" />
+    <Content Include="assets\i\examples\admin-opera.png" />
+    <Content Include="assets\i\examples\admin-safari.png" />
+    <Content Include="assets\i\examples\adminPage.png" />
+    <Content Include="assets\i\examples\blogPage.png" />
+    <Content Include="assets\i\examples\landing.png" />
+    <Content Include="assets\i\examples\landingPage.png" />
+    <Content Include="assets\i\examples\loginPage.png" />
+    <Content Include="assets\i\examples\sidebarPage.png" />
+    <Content Include="assets\i\favicon.png" />
+    <Content Include="assets\i\startup-640x1096.png" />
+    <Content Include="assets\js\amazeui.js" />
+    <Content Include="assets\js\amazeui.legacy.js" />
+    <Content Include="assets\js\amazeui.legacy.min.js" />
+    <Content Include="assets\js\amazeui.min.js" />
+    <Content Include="assets\js\amazeui.widgets.helper.js" />
+    <Content Include="assets\js\amazeui.widgets.helper.min.js" />
+    <Content Include="assets\js\app.js" />
+    <Content Include="assets\js\handlebars.min.js" />
+    <Content Include="assets\js\jquery.min.js" />
+    <Content Include="assets\js\polyfill\rem.min.js" />
+    <Content Include="assets\js\polyfill\respond.min.js" />
     <Content Include="index.aspx" />
-    <Content Include="i\app-icon72x72%402x.png" />
-    <Content Include="i\examples\admin-chrome.png" />
-    <Content Include="i\examples\admin-firefox.png" />
-    <Content Include="i\examples\admin-ie.png" />
-    <Content Include="i\examples\admin-opera.png" />
-    <Content Include="i\examples\admin-safari.png" />
-    <Content Include="i\examples\adminPage.png" />
-    <Content Include="i\examples\blogPage.png" />
-    <Content Include="i\examples\landing.png" />
-    <Content Include="i\examples\landingPage.png" />
-    <Content Include="i\examples\loginPage.png" />
-    <Content Include="i\examples\sidebarPage.png" />
-    <Content Include="i\favicon.png" />
-    <Content Include="i\startup-640x1096.png" />
-    <Content Include="js\jquery.min.js" />
-    <Content Include="login.aspx" />
-    <Content Include="css\main.css" />
+    <Content Include="index_login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -86,16 +101,21 @@
     <Compile Include="index.aspx.designer.cs">
       <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="login.aspx.cs">
-      <DependentUpon>login.aspx</DependentUpon>
+    <Compile Include="index_login.aspx.cs">
+      <DependentUpon>index_login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="login.aspx.designer.cs">
-      <DependentUpon>login.aspx</DependentUpon>
+    <Compile Include="index_login.aspx.designer.cs">
+      <DependentUpon>index_login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\fonts\FontAwesome.otf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
