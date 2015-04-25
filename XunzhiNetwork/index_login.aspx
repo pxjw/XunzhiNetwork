@@ -60,7 +60,7 @@
       <br />
       <div class="am-cf">
         <input type="submit" name="" value="登 录" class="am-btn am-btn-primary am-btn-sm am-fl">
-        <input type="submit" name="" value="游客登陆" class="am-btn am-btn-default am-btn-sm am-fr">
+        <input type="submit" name="" value="忘记密码" class="am-btn am-btn-default am-btn-sm am-fr">
       </div>
     </form>
     <hr>
