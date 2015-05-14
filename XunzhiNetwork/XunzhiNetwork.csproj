@@ -63,6 +63,7 @@
     <Content Include="assets\css\amazeui.flat.min.css" />
     <Content Include="assets\css\amazeui.min.css" />
     <Content Include="assets\css\app.css" />
+    <Content Include="assets\css\index_main.css" />
     <Content Include="assets\fonts\fontawesome-webfont.svg" />
     <Content Include="assets\i\app-icon72x72%402x.png" />
     <Content Include="assets\i\examples\admin-chrome.png" />
@@ -77,6 +78,7 @@
     <Content Include="assets\i\examples\loginPage.png" />
     <Content Include="assets\i\examples\sidebarPage.png" />
     <Content Include="assets\i\favicon.png" />
+    <Content Include="assets\i\index_bg.png" />
     <Content Include="assets\i\startup-640x1096.png" />
     <Content Include="assets\js\amazeui.js" />
     <Content Include="assets\js\amazeui.legacy.js" />
