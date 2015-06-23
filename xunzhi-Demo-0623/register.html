@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>用户注册页</title>
+	<link href="css/register.css" rel="stylesheet" type="text/css">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/index.css">
+	<script src="js/register.js" charset="gb2312" ></script>
+</head>
+<body>
+	<div id="contant">
+		<nav id="pagetop" class="navbar navbar-fixed-top nav1" role="navigation">
+	<div class="text-center">
+		<div class="navbar-header nav1-a navbar-left" >
+			<a class="navbar-brand " href="index.html"><img class="img-responsive" src="images/007.jpg"></a>
+		</div>
+	</div>
+</nav>
+
+	 	<div id="main">
+			<form action="#" method="post" onsubmit="return reg('click')">
+				<table>
+					<tr>
+						<td>用户名</td>
+						<td><input name="username" type="text" maxlength="20"><span class="s1">*用户名至少6位（一个中文字符两位）*</span></td>
+					</tr>
+					<tr>
+						<td>密码</td>
+						<td><input name="passw" type="password" maxlength="18"><span class="s1">*密码至少六位*</span></td>
+					</tr>
+					<tr>
+						<td>确认密码</td>
+						<td><input name="repassw" type="password" maxlength="18"><span class="s1">*确认密码必须和密码一致*</span></td>
+					</tr>
+					<tr>
+						<td>Email</td>
+						<td><input name="email" type="text"><span class="s1">*Email格式要正确：xxx@xx.com*</span></td>
+					</tr>
+				</table>
+				<input type="submit" class="btn btn-info btn-lg" value="立即注册" id="subm">
+			</form>
+		</div>
+
+		<div id="footer">
+			<span>@Miraculum Team</span>
+	    </div>
+	</div>
+</body>
+</html>

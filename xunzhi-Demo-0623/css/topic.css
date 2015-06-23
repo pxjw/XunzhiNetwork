@@ -1,0 +1,37 @@
+.topic_border1{
+    border:1px #cccccc solid;
+    border-radius: 10px;
+}
+.margin-top1{
+    margin-top:60px;
+}
+/*my_topic*/
+.font-ul1{
+    margin:8px 0 8px 5px;
+    font-size:24px;
+    border-bottom:1px #cccccc solid;
+}
+
+.font-ul1 li a:hover{
+    text-decoration:none;
+}
+
+.topic-ul1 li{
+    margin-top:3px;
+}
+
+.margin-bottom1{
+    margin-bottom:8px;
+}
+/*hot topic*/
+.margin1{
+    margin:5px;
+}
+
+.padding-left1{
+    padding-left:5px;
+}
+
+#button_answer{
+    margin:auto;
+}

@@ -1,0 +1,40 @@
+body {font-family:\5B8B\4F53,Arial Narrow,arial,serif;background:#ffffff;font-size:12px;}
+body,div,dl,dt,dd,ul,ol,li,pre,form,fieldset,input,textarea,blockquote,emBED{padding:0; margin:0;}
+li{list-style-type:none;}
+a {color:#2b2b2b;text-decoration:none;}
+a:visited {color:#2b2b2b;text-decoration:none;}
+a:hover {color:#ff0000;text-decoration:underline;}
+a:active {color:#2b2b2b;}
+
+/*xunzhi netword login.css*/
+body{background-color:#808080;}
+
+/*contant*/
+#contant{width:1000px; margin:auto;}
+
+/*top*/
+#top{margin-top:30px; width:1000px;height:100px;}
+#top .img1{display:block; margin-left:120px;float:left;}
+#top span{font-size:18px; display:block; padding:40px 0 0 20px; float:left; color:#ffffff;}
+
+/*main*/
+#main{margin:auto;width:800px; height:450px;background:#ffffff;}
+#main span{font-size:36px;color:#808080; display:block; padding:50px 0 50px 100px;}
+#main form{margin-left:100px;font-size:24px;color:#808080;}
+#main input{font-size:24px;}
+#main table td{height:36px;padding:20px 5px 20px 20px;}
+#main table td span{display:inline;padding:0px;}
+#subm{display:block;background: url('../images/004.gif') no-repeat left top; width:442px; height:77px; border:none;margin-top:20px;margin-left:20px;}
+
+	/*验证*/
+#main form span{font-size:12px;}
+#main .s1 {color:#aaa;}
+#main .s2 {color:red;}
+
+
+/*footer*/
+#footer{width:1000px; margin:auto; margin:8px 0;}
+#footer span{display:block;margin-top:10px;margin-left:120px;color:#543333;font-size:15px;}
+
+/*clear*/
+.clear{height:1px; margin:4px 0;width:1000px; overflow:hidden;border:1px #000000 solid;}

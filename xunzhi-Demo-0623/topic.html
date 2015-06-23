@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>话题</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/topic.css">
+    <script src="js/jquery.min.js"></script>
+
+</head>
+<body>
+<nav id="pagetop" class="navbar navbar-fixed-top nav1" role="navigation">
+    <div class="text-center">
+        <div class="navbar-header nav1-a navbar-left" >
+            <a class="navbar-brand " href="index.html"><img class="img-responsive" src="images/007.jpg"></a>
+            <button type="button" class="navbar-toggle collapsedb glyphicon glyphicon-align-justify" data-toggle="collapse" data-target="#collect"></button>
+        </div>
+        <div class="collapse navbar-collapse" id="collect">
+            <div class="navbar-left">
+                <form id="form2" class="navbar-form" role="search" method="post" method="get">
+                    <div class="form-group has-feedback">
+                        <input type="text" class="form-control input-group" placeholder="查询">
+                        <a href="#">
+                            <span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true" ></span>
+                        </a>
+                    </div>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle"  data-toggle="dropdown" aria-expanded="false">寻知
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu menu-width" role="menu">
+                            <li><a type="button" class="btn btn-default" data-toggle="modal" data-target="#exampleModa2" data-whatever="@fat">提问</a></li>
+                            <li><a type="submit" class="btn btn-default" form="form2">查询</a></li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <ul class="nav navbar-nav nav2">
+                    <li><a href="index.html">首页</a></li>
+                    <li class="active"><a href="#">话题</a></li>
+                    <li><a href="personal.html">个人中心</a></li>
+                </ul>
+            </div>
+            <div id="user1" class="navbar-right nav3">
+                <a href="register.html">注册</a>&nbsp;&nbsp;
+                <a class="move" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">登陆</a>
+            </div>
+            <div id="user2_1" class="btn-group navbar-right nav4">
+                <a href="#" class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/008.jpg" class="img-circle">
+                    <span>可未</span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">个人信息</a></li>
+                    <li><a href="#">切换账号</a></li>
+                    <li><a href="javascript:exit()">退出登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<script>
+    /*话题鼠标跳转*/
+    function move(i){
+        var j;
+        for(j=1;j<=3;j++){
+            if(j==i){
+                document.getElementById("nav_"+j).style.display = "block";
+                document.getElementById("nav"+j).className = "active";
+            }else{
+                document.getElementById("nav_"+j).style.display = "none";
+                document.getElementById("nav"+j).className = "";
+            }
+
+        }
+    }
+</script>
+<div class="col-sm-offset-1 col-sm-10 topic_border1 margin-top1 margin-bottom1">
+    <div class="my_topic">
+        <ul class="list-inline font-ul1">
+            <li><a id="nav1" class="active" onmousemove="move(1)" href="#">我关注的话题<sup><span title="关注12个话题" class="badge">12</span></sup></a></li>
+            <li><a id="nav2" onmousemove="move(2)" href="#">我最近关注的话题<sup><span title="最近新增4个话题" class="badge">4</span></sup></a></li>
+            <li><a id="nav3" onmousemove="move(3)" href="#">我关注的热门话题<sup><span title="关注话题的5个热门话题" class="badge">5</span></sup></a></li>
+        </ul>
+        <div class="topic" id="nav_1">
+            <ul class="list-inline topic-ul1">
+                <li><button class="btn btn-info">游戏</button></li><li><button class="btn btn-default">运动</button></li>
+                <li><button class="btn btn-default">编程</button></li><li><button class="btn btn-default">自然科学</button></li>
+                <li><button class="btn btn-default">经济学</button></li><li><button class="btn btn-default">互联网</button></li>
+                <li><button class="btn btn-default">物联网</button></li><li><button class="btn btn-default">金融</button></li>
+                <li><button class="btn btn-default">生命科学</button></li><li><button class="btn btn-default">艺术</button></li>
+                <li><button class="btn btn-default">阅读</button></li><li><button class="btn btn-default">设计</button></li>
+            </ul>
+        </div>
+        <div class="topic" id="nav_2" style="display:none;">
+            <ul class="list-inline topic-ul1">
+                <li><button class="btn btn-info">生命科学</button></li><li><button class="btn btn-default">艺术</button></li>
+                <li><button class="btn btn-default">阅读</button></li><li><button class="btn btn-default">设计</button></li>
+            </ul>
+        </div>
+        <div class="topic" id="nav_3" style="display:none;">
+            <ul class="list-inline topic-ul1">
+                <li><button class="btn btn-info">游戏</button></li><li><button class="btn btn-default">运动</button></li>
+                <li><button class="btn btn-default">编程</button></li>
+                <li><button class="btn btn-default">互联网</button></li>
+                <li><button class="btn btn-default">金融</button></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="col-sm-offset-1 col-sm-6 topic_border1">
+        <div class="hot_topic margin1 margin-bottom1">
+            <span class="font-color1 font1-size"><span class="glyphicon glyphicon-fire"></span>热门话题</span>
+        </div>
+        <div>
+            <ul class="list-inline topic-ul1">
+                <li><button class="btn btn-default">生物学</button></li><li><button class="btn btn-default">化学</button></li>
+                <li><button class="btn btn-info">游戏</button></li><li><button class="btn btn-default">运动</button></li>
+                <li><button class="btn btn-default">编程</button></li><li><button class="btn btn-default">自然科学</button></li>
+                <li><button class="btn btn-default">经济学</button></li><li><button class="btn btn-default">互联网</button></li>
+                <li><button class="btn btn-default">物联网</button></li><li><button class="btn btn-default">金融</button></li>
+                <li><button class="btn btn-default">生命科学</button></li><li><button class="btn btn-default">艺术</button></li>
+                <li><button class="btn btn-default">阅读</button></li><li><button class="btn btn-default">设计</button></li>
+                <li><button class="btn btn-default">物理学</button></li><li><button class="btn btn-default">文化</button></li>
+                <li><button class="btn btn-default">历史</button></li><li><button class="btn btn-default">电影</button></li>
+                <li><button class="btn btn-default">法律</button></li><li><button class="btn btn-default">科技</button></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        function answer(){
+            document.getElementById("answer").style.display="block";
+            document.getElementById("button_answer").style.display="none";
+        }
+    </script>
+    <div class="col-sm-4 topic_border1 padding-left1">
+        <div class="margin1">
+            <span class="font-color1 font1-size"><span class="glyphicon glyphicon-star-empty"></span>有兴趣可以做做题目哦</span>
+        </div>
+        <div>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一个经理有三个女儿，三个女儿的年龄加起来等于13，三个女儿的年龄乘起来等于经理自己的年龄，有一个下属已知道经理的年龄，但仍不能确定经理三个女儿的年龄，这时经理说只有一个女儿的头发是黑的，然后这个下属就知道了经理三个女儿的年龄。请问三个女儿的年龄分别是多少?为什么?</p>
+            <button id="button_answer" class="btn btn-default" onclick="javascript:answer(this)">点击查看答案</button>
+            <p id="answer" style="color:#ff0000; display:none;">&nbsp;&nbsp;&nbsp;&nbsp;2,2,9，因为只有36 = 6*6*1 36 = 9 * 2 * 2</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

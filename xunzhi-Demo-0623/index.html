@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>寻知</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/wangEditor-1.3.0.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/index.js" charset="gb2312"></script>
+	<script src="js/scroll.js"></script>
+	<script src="js/backtop.js"></script>
+	<script type="text/javascript">
+	</script>
+</head>
+<body onresize="width()">
+<nav id="pagetop" class="navbar navbar-fixed-top nav1" role="navigation">
+	<div class="text-center">
+		<div class="navbar-header nav1-a navbar-left" >
+			<a class="navbar-brand " href="index.html"><img class="img-responsive" src="images/007.jpg"></a>
+			<button type="button" class="navbar-toggle collapsedb glyphicon glyphicon-align-justify" data-toggle="collapse" data-target="#collect"></button>
+		</div>
+		<div class="collapse navbar-collapse" id="collect">
+			<div class="navbar-left">
+				<form id="form2" class="navbar-form" role="search" method="post" method="get">
+					<div class="form-group has-feedback">
+						<input type="text" class="form-control input-group" placeholder="查询">
+						<a href="#">
+							<span class="glyphicon glyphicon-search form-control-feedback" aria-hidden="true" ></span>
+						</a>
+					</div>
+					<div class="btn-group">
+						<button type="button" class="btn btn-default dropdown-toggle"  data-toggle="dropdown" aria-expanded="false">寻知
+						<span class="caret"></span>
+						</button>
+						<ul class="dropdown-menu menu-width" role="menu">
+							<li><a  data-toggle="modal" data-target="#exampleModa2" data-whatever="@fat">提问</a></li>
+							<li><a  form="form2">查询</a></li>
+						</ul>
+					</div>
+				</form>
+			</div>
+
+			<div id="user1" class="navbar-right nav3">
+				<a href="register.html">注册</a>&nbsp;&nbsp;
+				<a class="move" onclick="javascript:login()" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">登录</a>
+			</div>
+			<div id="user2_1" class="btn-group navbar-right nav4">
+				<a href="#" class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+					<img src="images/008.jpg" class="img-circle">
+					<span>可未</span>
+				</a>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="#">个人信息</a></li>
+					<li><a href="#">切换账号</a></li>
+					<li><a href="javascript:exit()">退出登录</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
+<div id="changeheight" class="container page1">
+	<div>
+		<ul class="nav navbar-nav page1-nav">
+			<li><a href="#">最新提问</a></li>
+			<li><a href="#">热门问题</a></li>
+			<li><a href="#">问题推荐</a></li>
+		</ul>
+	</div>
+	<div id="width">
+	</div>
+	<div class="contant">
+		<div class="col-sm-8">
+			<div class="contant1">
+				<div class="text-shadow hr1">
+					<span class="font1-size "><span class="glyphicon glyphicon-star"></span>热门问题</span>
+				</div>
+				<div class="user1">
+					<div class="user1-img hr1">
+						<div class="question1">
+							<a href="#">高度自律是一种怎样的体验？</a>
+							<span class="pull-right color1"><span class="glyphicon glyphicon-fire"></span>热门问题</span>
+						</div>
+						<div class="hr1"></div>
+						<div class="user1-left">
+							<div id="img1" rel="1" class="img_go">
+								<a href="#">
+									<img class="img-circle img1-area" src="images/009.jpg">
+								</a>
+								<div id="display1" class="display">
+									<img class="img-circle img2" src="images/009.jpg">
+									<span class="font-color1">若心</span>
+									<hr/>
+									<ul class="list-inline">
+										<li><a href="#">关注</a><span>1.5k</span></li>
+										<li><a href="#">回答</a><span>324</span></li>
+										<li><a href="#">提问</a><span>9</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="count">
+								<a href="#" class="btn btn-info" type="button" title="赞同">1.2k</a>
+							</div>
+						</div>
+						<div class="user1-right">
+							<div class="user1-nav">
+								<a href="#">
+									<span class="username1">若心</span>
+								</a>
+								<span class="glyphicon glyphicon-minus"></span>
+								<a href="#">关注ta</a>
+								<span class="pull-right color2"><span class="glyphicon glyphicon-flash"></span>精彩回答</span>
+							</div>
+							<div class="user1-answer">
+								<br/>
+								<div id="part_info0">
+									<p>
+										&nbsp;&nbsp;&nbsp;&nbsp;孤独，寂寞，但是充实。
+										非常怀念读研的时候，尤其是研一，是我最自律的一段时光。
+										每天早上六点钟起床，室友都还睡着，我就收拾好出门了。
+										先去食堂买一个包子一杯豆浆，天气好就去学校小树林晨读新概念四，天气不好就在食堂晨读，后来天气越来越冷，基本上都去食堂晨读了。请想象下食堂大妈看我的眼神。
+										早饭晨读后成为最早进入图书馆的那批人。
+										开始一天的专业课学习。对了，作为一名保研生，我之前对自己的研究方向可以用一无所知来形容，只是选了一个学校里的好专业，更加不能知道自己将来的毕业论文在何方了。
+										因此从进研一开始我做的事情就是自己看书学习写笔记，慢慢摸索自己的研究方向和论文选题。
+									</p>
+								</div>
+								<div id="all_info0" class="all_info">
+									<p>
+										<span style="color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;">孤独，寂寞，但是充实。</span>
+										<br style="color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;">
+										<span style="color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;">非常怀念读研的时候，尤其是研一，是我最自律的一段时光。</span>
+										<br style="color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;">
+										<span style="color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;">每天早上六点钟起床，室友都还睡着，我就收拾好出门了。先去食堂买一个包子一杯豆浆，天气好就去学校小树林晨读新概念四，天气不好就在食堂晨读，后来天气越来越冷，基本上都去食堂晨读了。请想象下食堂大妈看我的眼神。</span>
+										<br style="color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;"><span style="color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;">早饭晨读后成为最早进入图书馆的那批人。开始一天的专业课学习。对了，作为一名保研生，我之前对自己的研究方向可以用一无所知来形容，只是选了一个学校里的好专业，更加不能知道自己将来的毕业论文在何方了。因此从进研一开始我做的事情就是自己看书学习写笔记，慢慢摸索自己的研究方向和论文选题。</span>
+										<br style="color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;"><span style="color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;">有课的时候就去听课，除了听本专业的课程，我还旁听了别的专业的课程，并在那门课上很快和老师熟悉了，经常回答提问什么的。</span>
+										<br style="color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;"><span style="color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;">晚上接着图书馆，一直到闭馆后回宿舍继续看书到11点，准时休息。</span>
+										<br style="color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;">
+										<span style="color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;">周而复始，那时候我虽然带了电脑到学校，但电脑基本上被锁起来，也特意没有联网。那时候中午吃完饭还是会回宿舍收拾一下，看到同学在看电视也会偷瞄两眼，但最后还是很坚定的去了图书馆。</span>
+										<br style="color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;"><span style="color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;">研一一年手写了一百本书的笔记，当同学们还在为选题着急的时候，我在研二下论文已经写了两万字，并在研二暑假写完了论文，答辩的时候外校的答辩主席说的是我的论文如果参加博士答辩也同样给我通过，并通过导师来问我要不要读博。</span>
+										<br style="color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;"><span style="color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;">毕业的时候导师对我说的是，从来只知道我好学，不知道我能学的这么好。</span><br style="color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;">
+										<span style="color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;">顿时泪目，作为一名小白进入专业，到毕业时能得到导师这样的评价，心愿已了。所以后来也并没有在学术圈走下去。</span><br style="color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;"><br style="color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;">
+										<span style="color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;">读研的时候我每天早出晚归，除了上课外都是一个人，确实非常孤独，幸好寝室同学也没有排挤我，我和她们就像平行线一样过着各自的生活。</span><br style="color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;"><span style="color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;">晒一张读研时的笔记和草稿纸吧，以纪念那段时光。</span><br>
+									</p>
+								</div>
+								<div>
+									<a rel="0" class="all_position text-right all_info_click" href="javascript:">查看全部</a>
+								</div>
+							</div>
+							<div class="color3">
+								<ul class="list-inline list-unstyled">
+									<li><a href="#"><span class="glyphicon glyphicon-plus"></span>关注问题</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-gift"></span>收藏答案</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-link"></span>分享</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-thumbs-up"></span>点赞</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-comment"></span>210条评论</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="user1-img hr1">
+						<div class="user1-left">
+							<div id="img2" rel="2" class="img_go">
+								<a href="#">
+									<img class="img-circle img1-area" src="images/011.jpg">
+								</a>
+								<div id="display2" class="display">
+									<img class="img-circle img2" src="images/011.jpg">
+									<span class="font-color1">张家老大</span>
+									<hr/>
+									<ul class="list-inline">
+										<li><a href="#">关注</a><span>666</span></li>
+										<li><a href="#">回答</a><span>121</span></li>
+										<li><a href="#">提问</a><span>21</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="count">
+								<a href="#" class="btn btn-info" type="button" title="赞同">812</a>
+							</div>
+
+						</div>
+						<div class="user1-right">
+							<div class="user1-nav">
+								<a href="#">
+									<span class="username1">张家老大</span>
+								</a>
+								<span class="glyphicon glyphicon-minus"></span>
+								<a href="#">关注ta</a>
+								<span class="pull-right color2"><span class="glyphicon glyphicon-flash"></span>精彩回答</span>
+							</div>
+							<div class="user1-answer">
+								<br/>
+								<div id="part_info1">
+									<p>
+										我认为有两种类型或者说两种等级的高度自律：
+										第一种是为了尽可能的多产出，多做事情的自律；主要是对自己的时间、精力、情绪、资源等进行管理;我称为”快模式”的自律，这是对生活和工作方式的自律。
+										第二种是为了产出真正有价值内容，为了使自己的生活更富有成果，而对自己欲望的管理，本质上是对自我欲望的节制，这是一种真正意义上的自律，我称为”慢模式”的自律。
+										快模式的自律身边人容易观察到，慢模式的自律只有熟悉人经过长期的认真观察才能发现。
+										我认为自己在第一种自律方面做的还不错，自己给自己打个85分吧，但是对于第二种，才刚刚开始，属于不及格的区间。
+										首先说快模式的自律是怎样的一种体验。
+										先吹个牛，我的一位朋友去年在朋友圈里对我的评价：你是我的朋友中最有毅力的，我听了当然很开心，也把这当成鞭策，因为有毅力并不能于有成果。
+									</p>
+								</div>
+								<div id="all_info1" class="all_info">
+									<p style="padding: 0px; margin-top: 0px; margin-bottom: 0px; color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;">我认为有两种类型或者说两种等级的高度自律：</p>
+									<p><br style="color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;"></p>
+									<p style="padding: 0px; margin-top: 0px; margin-bottom: 0px; color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;">第一种是为了尽可能的多产出，多做事情的自律；主要是对自己的时间、精力、情绪、资源等进行管理;我称为<b>”</b>
+										<b>快模式</b><b>”</b>的自律，这是对生活和工作方式的自律。
+									</p>
+									<p><br style="color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;"></p>
+									<p style="padding: 0px; margin-top: 0px; margin-bottom: 0px; color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;">第二种是为了产出真正有价值内容，为了使自己的生活更富有成果，而对自己欲望的管理，本质上是对自我欲望的节制，这是一种真正意义上的自律，我称为
+										<b>”</b><b>慢模式</b><b>”</b>的自律。</p><p style="padding: 0px; margin-top: 0px; margin-bottom: 0px; color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;">快模式的自律身边人容易观察到，慢模式的自律只有熟悉人经过长期的认真观察才能发现。</p>
+									<p style="padding: 0px; margin-top: 0px; margin-bottom: 0px; color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;">我认为自己在第一种自律方面做的还不错，自己给自己打个85分吧，但是对于第二种，才刚刚开始，属于不及格的区间。</p>
+									<p style="padding: 0px; margin-top: 0px; margin-bottom: 0px; color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;">首先说快模式的自律是怎样的一种体验。</p><p style="padding: 0px; margin-top: 0px; margin-bottom: 0px; color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;">
+									先吹个牛，我的一位朋友去年在朋友圈里对我的评价：你是我的朋友中最有毅力的，我听了当然很开心，也把这当成鞭策，
+									因为有毅力并不能于有成果。</p><p style="padding: 0px; margin-top: 0px; margin-bottom: 0px; color:
+									rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;">先给大家看看去年的工作和生活的历程。
+									自己工作真的很忙，出差非常多，2014年的总出差次数超过50次，这还没有算短途的。国内航线飞行了大约17万公里，似乎还
+									没遇到只飞国内航线和我飞一样多的朋友。工作的具体情况不方便多说，这里放一张航旅纵横里的飞行数据统计图。</p>
+									<p style="padding: 0px; margin-top: 0px; margin-bottom: 0px; color: rgb(34, 34, 34); font-size: 13px;
+									line-height: 22.1000003814697px;"><br></p><p style="padding: 0px; margin-top: 0px; margin-bottom: 0px;
+									color: rgb(34, 34, 34); font-size: 13px; line-height: 22.1000003814697px;">此外，我还要给研究生开一门课，
+									春季学期上半年课，有助教，但是也很累。因为上课不属于本职工作，所以实际上也是想各种办法挤出时间来完成的。上课过程其实很开心
+									，但是总归要消耗精力，而人的意志力是有限资源，所以，不容易坚持下来。我坚持了8年了，希望再坚持几年吧。</p>
+									<p style="padding: 0px; margin-top: 0px; margin-bottom: 0px; color: rgb(34, 34, 34); font-size: 13px;
+									 line-height: 22.1000003814697px;">2014年我在知乎写的回答很少，因为我从去年开始，在把研究生课程的讲义整理成教材，
+										耗费了无数心血，今年春节前后，终于把初稿完成，大约470页面。这些工作多数都是在机场、飞机上和业余时间完成的。。
+										后续的修改工作量还很大，每张图都要自己画，文字也都是一个一个字敲进去的。</p>
+								</div>
+								<div>
+									<a rel="1" class="all_position text-right all_info_click" href="javascript:">查看全部</a>
+								</div>
+							</div>
+							<div class="color3">
+								<ul class="list-inline list-unstyled">
+									<li><a href="#"><span class="glyphicon glyphicon-plus"></span>关注问题</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-gift"></span>收藏答案</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-link"></span>分享</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-thumbs-up"></span>点赞</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-comment"></span>110条评论</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="user1-img hr1">
+						<div class="user1-left">
+							<div id="img3" rel="3" class="img_go">
+								<a href="#">
+									<img class="img-circle img1-area" src="images/013.gif">
+								</a>
+								<div id="display3" class="display">
+									<img class="img-circle img2" src="images/013.gif">
+									<span class="font-color1">月下老人</span>
+									<hr/>
+									<ul class="list-inline">
+										<li><a href="#">关注</a><span>1.8w</span></li>
+										<li><a href="#">回答</a><span>210</span></li>
+										<li><a href="#">提问</a><span>1</span></li>
+									</ul>
+								</div>
+							</div>
+							<div class="count">
+								<a href="#" class="btn btn-info" type="button" title="赞同">236</a>
+							</div>
+						</div>
+						<div class="user1-right">
+							<div class="user1-nav">
+								<a href="#">
+									<span class="username1">月下老人</span>
+								</a>
+								<span class="glyphicon glyphicon-minus"></span>
+								<a href="#">关注ta</a>
+								<span class="pull-right color2"><span class="glyphicon glyphicon-flash"></span>精彩回答</span>
+							</div>
+							<div class="user1-answer">
+								<br/>
+								<p>
+									&nbsp;&nbsp;&nbsp;&nbsp;<strong>高度自律在外界冲击下会迷茫</strong>
+								</p>
+							</div>
+							<div class="color3">
+								<ul class="list-inline list-unstyled">
+									<li><a href="#"><span class="glyphicon glyphicon-plus"></span>关注问题</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-gift"></span>收藏答案</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-link"></span>分享</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-thumbs-up"></span>点赞</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-comment"></span>54条评论</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<nav class="nav-page text-center">
+					<ul class="pagination">
+						<li class="disabled">
+							<a href="#" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+							</a>
+						</li>
+						<li class="active"><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li>
+							<a href="#" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+							</a>
+						</li>
+					</ul>
+					<div class="text-right next1-topic">
+						<a href="#"><span>下一个热门问题</span></a>
+					</div>
+				</nav>
+			</div>
+			<!--第二部分-->
+			<div class="contant1">
+				<div class="new1-question text-shadow">
+					<span class="font1-size"><span class="glyphicon glyphicon-star"></span>最新提问</span>
+				</div>
+				<div class="new2-question">
+					<div class="new3-question">
+						<div id="img5" rel="5" class="img_go">
+							<a href="#"><img class="img-rounded img1-area" src="images/010.gif"></a>
+							<div id="display5" class="display">
+								<a href="#"><img class="img-rounded img2" src="images/010.gif"></a>
+								<span class="font-color1">未知寻</span>
+								<hr/>
+								<ul class="list-inline">
+									<li><a href="#">关注</a><span>11</span></li>
+									<li><a href="#">回答</a><span>51</span></li>
+									<li><a href="#">提问</a><span>2</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="question">
+						<div class="question-title div-inline">
+							<a href="#">武则天当皇帝的原由？</a>
+							<span class="glyphicon glyphicon-minus"></span>
+							<a href="#">未知寻</a>提问
+						</div>
+						<div class="font1-size color2 pull-right">
+							<span class="glyphicon glyphicon-grain"></span><span>最新提问</span>
+						</div>
+						<br/>
+						<div class="question-contant">
+							<p>
+								&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;武则天是因为女儿死了才变得心狠手辣吗？当她杀死王皇后，儿子坐上太子之位，她便可退隐了，完全可以像慈禧那样坐拥朝政，
+								然而她却没有这么做，武则天之后又一次次的将自己的儿子迫害。难道武则天真的铁血无情？或者是另有隐情？
+							</p>
+						</div>
+					</div>
+					<div class="color3">
+						<ul class="list-inline list-unstyled">
+							<li><a href="#"><span class="glyphicon glyphicon-plus"></span>关注问题</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-screenshot"></span>回答问题</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-star-empty"></span>邀请回答</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-comment"></span>2个回答</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="new2-question">
+					<div class="new3-question">
+						<div id="img4" rel="4" class="img_go">
+							<a href="#"><img class="img-rounded img1-area" src="images/014.jpg"></a>
+							<div id="display4" class="display">
+								<a href="#"><img class="img-rounded img2" src="images/014.jpg"></a>
+								<span class="font-color1">于无心</span>
+								<hr/>
+								<ul class="list-inline">
+									<li><a href="#">关注</a><span>1</span></li>
+									<li><a href="#">回答</a><span>3</span></li>
+									<li><a href="#">提问</a><span>9</span></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="question">
+						<div class="question-title div-inline">
+							<a href="#">编程语言有那么多，为什么不进行整合？</a>
+							<span class="glyphicon glyphicon-minus"></span>
+							<a href="#">于无心</a>提问
+						</div>
+						<div class="font1-size color2 pull-right">
+							<span class="glyphicon glyphicon-grain"></span><span>最新提问</span>
+						</div>
+						<br/>
+						<div class="question-contant">
+							<p>
+								&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;现在编程语言有很多，为什么会出现那么多？现在的编程大神都精通多门语言，既然这么多大神都精通这么多语言为什么
+								不对这些语言进行整合，也方便后来的学者，对编程的进步也会有很大的提高啊？为什么不这么做？现在有些编程语言只是在某个方面很实用，为何不将大众的编程
+								语言进行改写呢？使它也能够实现这部分的功能？
+							</p>
+						</div>
+					</div>
+					<div class="color3">
+						<ul class="list-inline list-unstyled">
+							<li><a href="#"><span class="glyphicon glyphicon-plus"></span>关注问题</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-screenshot"></span>回答问题</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-star-empty"></span>邀请回答</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-comment"></span>2个回答</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="text-center top-hr">
+					<a href="#" type="button" class="btn">查看更多…</a>
+				</div>
+			</div>
+		</div>
+		<!--右边部分-->
+		<div class="col-sm-4">
+			<div class="right-contant1">
+				<div class="right-top1">
+					<a href="#" class="attention-link text-shadow"><span><span class="glyphicon glyphicon-heart"></span>我的收藏</span></a>
+				</div>
+				<div class="attention-question hr1">
+					<div class="hr1">
+						<span class="text-shadow attention-font1 two-div1">我关注的问题</span>
+						<a href="#"><span class="pull-right">更多<span class="glyphicon glyphicon-plus"></span></span></a>
+					</div>
+					<ul class="three-div1">
+						<li><a href="#">为什么有关php的问题都会有很多人黑？<span class="badge" title="3个新的回答">3</span></a></li>
+						<li><a href="#">什么才算是真正的编程能力？</a></li>
+						<li><a href="#">病人欠费逃跑，医生该怎么办？<span class="badge" title="1个新的回答">1</span></a></li>
+						<li><a href="#">在北上广打拼的单身年轻人的生活状态是怎样的？</a></li>
+						<li><a href="#">富人和穷人能在一起吗？<span class="badge" title="11个新的回答">11</span></a></li>
+					</ul>
+				</div>
+				<div class="attention-answer hr1">
+					<div class="hr1">
+						<span class="text-shadow attention-font1 two-div1">邀请我回答</span>
+						<a href="#"><span class="pull-right">更多<span class="glyphicon glyphicon-plus"></span></span></a>
+					</div>
+					<ul class="three-div1">
+						<li><a href="#">「字如其人」是真的吗？这能看出什么？</a><span>@</span><a href="#">醉木鱼</a></li>
+						<li><a href="#">为什么科普在中国进行得如此艰难？国外的科普环境又是怎样的？</a><span>@</span><a href="#">阿三</a></li>
+						<li><a href="#">计算化学领域中有哪些技术可以被称为是当前的黑科技？</a><span>@</span><a href="#">定三鲜</a></li>
+						<li><a href="#">为什么化学命名中的生僻字那么多？</a><span>@</span><a href="#">辉星</a></li>
+						<li><a href="#">哪个网站可以提供优秀的景观、建筑效果图中的人像素材？</a><span>@</span><a href="#">期沫殇</a></li>
+					</ul>
+				</div>
+				<div class="allquestion">
+					<div class="hr1">
+						<span class="text-shadow attention-font1 two-div1">所有问题</span>
+						<a href="#"><span class="pull-right">更多<span class="glyphicon glyphicon-plus"></span></span></a>
+					</div>
+					<ul class="three-div1">
+						<li><a href="#">如何评价《盗墓笔记》之“我要上交给国家”？</a></li>
+						<li><a href="#">中国女留学生在美国受到殴打，美国法律的判决对比我国法律现状？</a></li>
+						<li><a href="#">现今沸沸扬扬的对于拐卖儿童直接判死刑有何见解？</a></li>
+						<li><a href="#">广电一二再，再而三的对电视节目的整顿是利大于弊，还是弊大于利？</a></li>
+						<li><a href="#">如何评价《盗墓笔记》之“我要上交给国家”？</a></li>
+						<li><a href="#">中国女留学生在美国受到殴打，美国法律的判决对比我国法律现状？</a></li>
+						<li><a href="#">广电一二再，再而三的对电视节目的整顿是利大于弊，还是弊大于利？</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="right-contant1">
+				<div class="right-top1">
+					<a href="#" class="attention-link text-shadow"><span class="glyphicon glyphicon-heart"></span><span>话题广场</span></a>
+				</div>
+				<div class="list">
+					<ul class="list-unstyled topic-padding text-nowrap">
+						<li><a href="#">北风</a><span>&nbsp;关注&nbsp;</span><a href="#">少年应该以怎样的心态面对高考？</a></li>
+						<li><a href="#">阿若</a><span>&nbsp;赞同&nbsp;</span><a href="#" title="少年应该以怎样的心态面对高考？"><nobr>林冲之的回答</nobr></a></li>
+						<li><a href="#">郭志</a><span>&nbsp;收藏&nbsp;</span><a href="#" title="少年应该以怎样的心态面对高考？"><nobr>林冲之的回答</nobr></a></li>
+						<li><a href="#">程力</a><span>&nbsp;收藏&nbsp;</span><a href="#" title="少年应该以怎样的心态面对高考？"><nobr>林冲之的回答</nobr></a></li>
+						<li><a href="#">郭志</a><span>&nbsp;收藏&nbsp;</span><a href="#" title="少年应该以怎样的心态面对高考？"><nobr>林冲之的回答</nobr></a></li>
+						<li><a href="#">郭志</a><span>&nbsp;收藏&nbsp;</span><a href="#" title="少年应该以怎样的心态面对高考？"><nobr>林冲之的回答</nobr></a></li>
+						<li><a href="#">郭志</a><span>&nbsp;收藏&nbsp;</span><a href="#" title="中国女留学生在美国受到殴打，美国法律的判决对比我国法律现状？"><nobr>抹奋的回答</nobr></a></li>
+						<li><a href="#">李大罚</a><span>&nbsp;收藏&nbsp;</span><a href="#" title="现今沸沸扬扬的对于拐卖儿童直接判死刑有何见解？"><nobr>奇黄添的回答</nobr></a></li>
+						<li><a href="#">游悦</a><span>&nbsp;关注&nbsp;</span><a href="#" title="为什么科普在中国进行得如此艰难？国外的科普环境又是怎样的？"><nobr>为什么科普在中国进行得如此艰难？国外的科普环境又是怎样的？</nobr></a></li>
+						<li><a href="#">安儿</a><span>&nbsp;收藏&nbsp;</span><a href="#" title="少年应该以怎样的心态面对高考？"><nobr>林冲之的回答</nobr></a></li>
+						<li><a href="#">肖梦依</a><span>&nbsp;收藏&nbsp;</span><a href="#" title="少年应该以怎样的心态面对高考？"><nobr>林冲之的回答</nobr></a></li>
+						<li><a href="#">华冾生</a><span>&nbsp;收藏&nbsp;</span><a href="#" title="少年应该以怎样的心态面对高考？"><nobr>林冲之的回答</nobr></a></li>
+						<li><a href="#">钱小志</a><span>&nbsp;收藏&nbsp;</span><a href="#" title="少年应该以怎样的心态面对高考？"><nobr>林冲之的回答</nobr></a></li>
+						<li><a href="#">罗鸿鑫</a><span>&nbsp;收藏&nbsp;</span><a href="#" title="少年应该以怎样的心态面对高考？"><nobr>林冲之的回答</nobr></a></li>
+						<li><a href="#">马化腾</a><span>&nbsp;回答&nbsp;</span><a href="#" title="腾讯基业？"><nobr>腾讯基业？</nobr></a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="contant1">
+				<div class="right-top1">
+					<span class="attention-link text-shadow"><span class="glyphicon glyphicon-heart"></span>社区服务中心</span>
+				</div>
+				<div class="col-sm-6">
+					<ul class="list-unstyled topic-padding">
+						<li><a href="#">寻知大神讨论</a></li>
+						<li><a href="#">寻知设置教程</a></li>
+						<li><a href="#">寻知菜鸟园地</a></li>
+						<li><a href="#">寻知关注</a></li>
+						<li><a href="#">寻知热门答案</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6">
+					<ul class="list-unstyled topic-padding">
+						<li><a href="#">求助</a></li>
+						<li><a href="#">邀请朋友</a></li>
+						<li><a href="#">推荐关注</a></li>
+						<li><a href="#">推荐大神</a></li>
+						<li><a href="#">推荐问题解答</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="panel-footer footer-set">
+	<ul class="list-inline block-center">
+		<li><a href="#">联系我们</a></li>
+		<li><a href="#">建议</a></li>
+		<li><a href="#">用户回馈</a></li>
+	</ul>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h2 class="modal-title" id="exampleModalLabel">寻知用户登录</h2>
+			</div>
+			<div class="modal-body">
+				<form id="form1" action="#" method="post">
+					<div class="form-group">
+						<label for="recipient-name" class="control-label">邮箱:</label>
+						<input type="email" class="form-control" id="recipient-name" placeholder="邮箱">
+					</div>
+					<div class="form-group">
+						<label for="message-text" class="control-label">密码:</label>
+						<input type="password" class="form-control" id="message-text" placeholder="密码">
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				<button  type="submit" class="btn btn-info" form="form1">登录</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade" id="exampleModa2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog question-width">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h2 class="modal-title" id="exampleModalLabe2">用户提问</h2>
+			</div>
+			<div class="modal-body">
+				<div>
+					<form class="form-group">
+						<div>
+							<input type="text" name="title" class="form-control" placeholder="标题">
+						</div>
+						<textarea id='textarea1' style='height:500px; width:100%;'></textarea>
+					</form>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				<button  type="submit" class="btn btn-info" form="form2">提问</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="col-sm-offset-11 navbar-fixed-bottom come-margin" id="back-to-top">
+	<a href="#pagetop" class="btn btn-lg"><span class="glyphicon glyphicon-circle-arrow-up"></span></a>
+</div>
+<script src="js/wangEditor-1.3.0.min.js"></script>
+</body>
+</html>
